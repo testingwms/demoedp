@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+<body>
+    
+    <h1>Student Info</h1>
+    <input type="text" id="fname" placeholder="Enter your pangalan:">
+    <input type="number" id="age" placeholder="Enter your age:">
+    <button type="button" onclick="Info_student();">Click ME</button>
+
+    <h2 id="display"></h2>
+
+
+</body>
+<script>
+    function Info_student()
+    {
+     var fname_1 = document.getElementById("fname").value;
+     var age_1 = document.getElementById("age").value;
+      var info = {
+                fname: fname_1,
+                age:     age_1
+                 };
+      
+      document.getElementById("display").innerHTML = info.fname + " " + info.age;
+    }
+</script>
+
+</html>
